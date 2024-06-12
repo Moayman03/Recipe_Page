@@ -1,0 +1,179 @@
+/* Start Global Rules */
+:root {
+    --nutmegColor: hsl(14, 45%, 36%);
+    --darkraspberry: hsl(332, 51%, 32%);
+    --lightGrey: hsl(30, 10%, 34%);
+    --fontSize: 16px;
+    --fontFamily1: "Young Serif", serif;   
+    --fontFamily2: "Outfit", sans-serif;   
+}
+/* End Global Rules */
+body {
+    background-color:  hsl(30, 54%, 90%);
+}
+@media (max-width: 390px) {
+    body {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+}
+.separator {
+    background-color: var(--lightGrey);
+    height: 1px;
+    margin: 25px 0 20px;
+    opacity: 0.2;
+}
+@media (max-width: 390px) {
+    .separator {
+        margin: 25px 20px 20px;
+    }
+}
+.container {
+    background-color: white;
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 25px;
+}
+@media (max-width: 390px) {
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+.container img {
+    width: 100%;
+    border-radius: 10px;
+}
+@media (max-width: 390px) {
+    .container img {
+        border-radius: 0px;
+    }
+}
+@media (max-width: 390px) {
+    .content {
+        padding: 0 20px;
+    }
+}
+.container h2.main {
+    font-family: var(--fontFamily1);
+    font-size: 30px;
+    font-weight: normal;
+}
+@media (max-width: 390px) {
+    .container h2.main {
+        font-size: 30px;
+    }
+}
+.container p {
+    font-family: var(--fontFamily2);
+    line-height: 1.5;
+    margin-top: -5px;
+    color: #777;
+    font-size: var(--fontSize);
+}
+.container .preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.container .preparation h2.preparation {
+    font-size: 18px;
+    font-family: var(--fontFamily2);
+    color: var(--darkraspberry);
+    margin: 0;
+}
+.container .preparation ul {
+    font-family: var(--fontFamily2);
+    margin-left: -10px;
+}
+.container .preparation ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.container .preparation ul li span {
+    font-weight: bold;
+    margin-left: 20px;
+    color: var(--lightGrey);
+}
+.container .ingredients .title {
+    font-weight: normal;
+    font-family: var(--fontFamily1);
+    color: var(--nutmegColor);
+}
+.container .ingredients ul {
+    margin-left: -20px;
+    font-family: var(--fontFamily2);
+}
+.container  .ingredients ul li {
+    font-size: 14px;
+    color: var(--lightGrey);
+    padding-left: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+.container  .ingredients ul li::marker {
+    color: var(--nutmegColor);
+}
+.container .instructions .title {
+    font-weight: normal;
+    font-family: var(--fontFamily1);
+    color: var(--nutmegColor);
+    margin: 0;
+}
+.container .instructions ol {
+    margin-left: -20px;
+    font-family: var(--fontFamily2);
+    line-height: 1.6;
+}
+.container .instructions ol li {
+    font-size: 14px;
+    color: var(--lightGrey);
+    padding-left: 15px;
+    letter-spacing: 0.5px;
+}
+.container .instructions ol li span {
+    font-weight: bold;
+}
+.container .instructions ol li::marker {
+    color: var(--nutmegColor);
+    font-weight: bold;
+}
+.container .nutrition .title {
+    font-weight: normal;
+    font-family: var(--fontFamily1);
+    color: var(--nutmegColor);
+}
+.container .nutrition p {
+    font-family: var(--fontFamily2);
+    line-height: 1.5;
+    margin-top: -5px;
+    color: #777;
+    font-size: var(--fontSize);
+}
+.container .nutrition ul {
+    list-style: none;
+    color: #777;
+    font-size: var(--fontSize);
+    margin-left: -32px;
+    font-family: var(--fontFamily2);
+}
+.container .nutrition ul li {
+    padding: 15px 15px 15px 31px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 390px) {
+    .container .nutrition ul li {
+        padding: 15px;
+    }
+}
+.container .nutrition ul li:not(:first-child) {
+    border-top: 1px solid ;
+}
+.container .nutrition ul li span {
+    color: var(--nutmegColor);
+    font-weight: bold;
+}
